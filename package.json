@@ -1,27 +1,27 @@
 {
-    "name": "Media content analysis system",
+    "name": "database-access-project",
     "version": "1.0.0",
-    "description": "Media content analysis system is an analytical media content service giving statistical information",
+    "description": "",
     "main": "index.js",
     "directories": {
         "doc": "docs",
         "test": "test"
     },
     "scripts": {
-        "test-db": "node ./test/database",
-        "build-db": "node ./test/build",
-        "test-app": "node ./test/application"
+        "test-db": "node ./database",
+        "build-db": "node ./build",
+        "test-app": "node ./application"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/IrinaV713/media-content-analysis.git"
+        "url": "git+https://github.com/IrinaV713/database-access-project.git"
     },
-    "author": "IP-O3, media-content-analysis",
+    
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/IrinaV713/media-content-analysis/issues"
+        "url": "https://github.com/IrinaV713/database-access-project/issues"
     },
-    "homepage": "https://github.com/IrinaV713/media-content-analysis#readme",
+    
     "dependencies": {
         "chalk": "^4.1.0",
         "cli-table3": "^0.6.0",
