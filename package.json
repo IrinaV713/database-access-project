@@ -1,0 +1,34 @@
+{
+    "name": "Media content analysis system",
+    "version": "1.0.0",
+    "description": "Media content analysis system is an analytical media content service giving statistical information",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs",
+        "test": "test"
+    },
+    "scripts": {
+        "test-db": "node ./test/database",
+        "build-db": "node ./test/build",
+        "test-app": "node ./test/application"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IrinaV713/media-content-analysis.git"
+    },
+    "author": "IP-O3, media-content-analysis",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/IrinaV713/media-content-analysis/issues"
+    },
+    "homepage": "https://github.com/IrinaV713/media-content-analysis#readme",
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "cli-table3": "^0.6.0",
+        "fs": "^0.0.1-security",
+        "lodash-node": "^3.10.2",
+        "mysql2": "^2.2.5",
+        "path": "^0.12.7",
+        "sequelize": "^6.3.5"
+    }
+}
