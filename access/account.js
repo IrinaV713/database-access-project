@@ -1,32 +1,40 @@
 const connection = require('../connection');
 const Sequilize = require('sequelize');
 
-const Account = require('./account.js');
+class Account extends Sequilize.Model {}
 
-class Access extends Sequilize.Model {}
-
-Access.init(
+Account.init(
     {
         role: {
-            type: Sequilize.STRING(100),
+            type: Sequilize.STRING(45),
             primaryKey: true
         },
-        account_role: {
-            type: Sequilize.STRING(100),
+        email: {
+            type: Sequilize.STRING(45),
             allowNull: false
+        },
+        login: {
+            type: Sequilize.STRING(45),
+            allowNull: false
+        },
+        password: {
+            type: Sequilize.STRING(45),
+            allowNull: false
+        },
+        state: {
+            type: Sequilize.BOOLEAN(),
+            allowNull: false
+        },
+        avatar: {
+            type: Sequilize.STRING(300),
+            allowNull: true
         }
     },
     {
         sequelize: connection,
         freezeTableName: true,
-        modelName: 'Access'
+        modelName: 'Account'
     }
 );
 
-Account.hasMany(Access);
-
-Access.belongsTo(Account, {
-    foreignKey: 'account_role'
-});
-
-module.exports = Access
+module.exports = Account
