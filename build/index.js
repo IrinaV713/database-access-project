@@ -20,3 +20,4 @@ connection.query(sqlScript, function (error) {
 });
 
 process.exit(0);
+
