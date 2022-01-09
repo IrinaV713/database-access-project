@@ -1,10 +1,10 @@
 const models = require("../../access/structures");
-const Table = require("cli-table3");
+const table = require("cli-table3");
 const lnode = require("lodash-node");
 const chalk = require("chalk");
 
 const toTable = (data, ...fields) => {
-  const result = new Table({
+  const result = new table({
     head: fields.map((f) => lnode.last(f.split("."))),
   });
   data.forEach((item) => {
@@ -27,8 +27,7 @@ const toTable = (data, ...fields) => {
       "email",
       "login",
       "password",
-      "state",
-      "avatar"
+      "state"
     )
   );
   const accessList = await models.Access.findAll({
