@@ -1,4 +1,4 @@
-const models = require('../../src/js/models');
+const models = require('../../access/models');
 const Table = require("cli-table3");
 const _ = require("lodash-node");
 const chalk = require("chalk");
