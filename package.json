@@ -10,7 +10,7 @@
     "scripts": {
         "test-db": "node ./database",
         "build-db": "node ./build",
-        "test-app": "node ./application"
+        "test-app": "node ./app"
     },
     "repository": {
         "type": "git",
